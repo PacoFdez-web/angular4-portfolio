@@ -1,0 +1,28 @@
+<footer class="ae-container-fluid rk-footer ">
+      <div class="ae-grid ae-grid--collapse">
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-left">
+          <ul class="rk-menu rk-footer-menu">
+            <li class="rk-menu__item"><a routerLink="about" class="rk-menu__link">Sobre Mí</a>
+            </li>
+            <li class="rk-menu__item"><a routerLink="home" class="rk-menu__link">Inicio</a>
+            </li>
+          </ul>
+          <p class="rk-footer__text rk-footer__copy "> <span class="ae-u-bold">© </span><span class="ae-u-bolder">{{ anio }} {{ _is.info.titulo | uppercase }}</span></p>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center">
+          <a [href]="_is.info.researchgate" target="_blank" class="rk-social-btn">           
+              <img src="assets/img/researchgate.png" alt="Researchgate Nuria Castañeda">        
+          </a>
+        </div>
+        <div class="ae-grid__item item-lg-4 au-xs-ta-center au-lg-ta-right">
+          <p class="rk-footer__text rk-footer__contact "> 
+          <span class="ae-u-bold">Email: </span>
+          <span class="ae-u-bolder"> 
+          <a href="mailTo:{{ _is.info.email }}" class="rk-dark-color ">{{ _is.info.email }} </a>
+          </span>
+          </p>
+          <p class="rk-footer__text rk-footer__by"><strong>Desarrollado por</strong> <a [href]="_is.info.pagina_autor" target="_blank" class="ae-u-bolder">{{ _is.info.nombre_autor }}</a>
+          </p>
+        </div>
+      </div>
+    </footer>
