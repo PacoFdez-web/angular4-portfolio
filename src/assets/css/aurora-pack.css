@@ -2620,7 +2620,7 @@ p {
 }
 
 h1 {
-  font-size: 2.95312rem;
+  font-size: 2.5rem;
 }
 
 h2 {
@@ -3447,7 +3447,7 @@ select.ae-input--lg {
 }
 
 .au-mt-2 {
-  margin-top: 1rem;
+  margin-top: 0.1rem;
 }
 
 .au-mt-3 {
@@ -4068,7 +4068,7 @@ select.ae-input--lg {
 }
 
 .au-xs-ptp-1 {
-  padding-top: 8.33333%;
+  padding-top: 4.33333%;
 }
 
 .au-xs-ptp-2 {

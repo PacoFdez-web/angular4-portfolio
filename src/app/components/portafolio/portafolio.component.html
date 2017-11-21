@@ -23,21 +23,27 @@
       <p class="animated lightSpeedIn">¡Espere, por favor!</p>
       </div>
 
-      
       <br>
 
+        <div class="ae-grid au-xs-ta-center animated fadeIn">
+          <h4 class="ae-u-boldest portada">Prehistoria, difusión, tecnología lítica, dibujo arqueológico y mucho más ...</h4>
+        </div> 
         <div *ngIf="_ps.productos.length > 0 && !_ps.cargando" 
               class="ae-masonry ae-masonry-md-2 ae-masonry-xl-4 animated fadeIn">
 
           <a *ngFor="let producto of _ps.productos" 
               [routerLink]="[ '/producto', producto.cod ]" 
               class="rk-item ae-masonry__item">
+            
             <img src="assets/productos/{{ producto.url }}.jpg" alt="Portfolio Nuria Castañeda">
+            
               <div class="item-meta">
                 <h2>{{ producto.titulo }}</h2>
                 <p>{{ producto.categoria }}</p>
               </div>
           </a>
+              
+
         </div>
       </section>
    
